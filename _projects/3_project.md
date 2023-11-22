@@ -1,81 +1,71 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: Swarming of Robotics
+project_title: Network Robotics Control
+description: Simulate the control of 6 wheeled robots in PyBullet physics simulator.
+img: assets/img/project4/swarm.png
+# importance: 3
+# category: Projects
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Swarm Robotics
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Swarming of robots refers to the collective behavior exhibited by a group of robots or agents that work together in a coordinated manner, often emulating the behavior seen in natural swarms such as bird flocks, fish schools, or insect colonies. Swarming involves individual robots following simple rules or behaviors that, when combined, result in emergent complex behaviors at the group level. This was a phd level course which I took in my masters in mechanical engineeirng, where at the end of the course we had to simulate six robots in pybullet engine to undergo controlled geometrical formation while avoiding the obstacles to reach the final destination.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Project Objective:
 
-<div class="row">
+The goal is to simulate the control of 6 wheeled robots in PyBullet (a physics simulator) that need to navigate an environment. The robots should:
+
+- Create a square formation in the original arena.
+- Switch to a different formation to cross the narrow passages. In all formations, keep at least 1m between each robot.
+- Navigate through the environment, avoid obstacles and reach the goal.
+- Create a triangle formation once the goal has been reached.
+
+## Target
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project4/target.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Target
 </div>
-<div class="row">
+
+## Description of the Controller:
+
+A combination of the consensus algorithm and the rigidity-based control technique is employed to establish the formation and control of robots. To achieve the desired motion, a proportional-derivative control law is utilized to propel the formation forward. The equation are as shown below.
+
+$$
+F_{\text{formation},i} = \begin{bmatrix}
+K_f \cdot (Dz_{(x, \text{desired})} - L_x)_i + D_f \cdot (\dot{z}_{(x,\text{desired})} - L_{\dot{x}})_i \\
+K_f \cdot (Dz_{(y, \text{desired})} - L_y)_i + D_f \cdot (\dot{z}_{(y,\text{desired})} - L_{\dot{y}})_i \\
+\end{bmatrix}
+$$
+
+Where 𝐾𝑓 and 𝐷𝑓 and gains, L is the graph Laplacian.
+
+$$
+F_{target,i} = \begin{bmatrix}
+K_{T}*min(y_{\text{goal}} - y_i) + D_{T}\dot{x}_{i}\\
+K_{T}*min(y_{\text{goal}} - y_i) + D_{T}\dot{y}_{i}\\
+\end{bmatrix}
+$$
+
+## Code
+
+The python code for the project is on my [Github](https://github.com/kkratos/Network-Controlled-Robotics-ME7974){:target="_blank"}repository.
+
+## Result
+
+In the project, I effectively utilized the pybullet physics engine to simulate a cohesive swarm of robots. As a result, I successfully achieved the designated project objective.
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project4/square.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Square Formation
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
