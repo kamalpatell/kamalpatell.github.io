@@ -4,7 +4,7 @@ title: Tableau Data Visualization
 project_title: Sales and Netflix Dashboard
 description: Data Visualization with Dashboard
 img: assets/img/dashboard.png
-# importance: 5
+importance: 4
 # category: Projects
 giscus_comments: false
 ---

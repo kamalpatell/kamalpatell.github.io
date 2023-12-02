@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Computer Aided Design
+title: Jet Engine
 project_title: CAD Modeling in PTC/Creo/Solidworks
 description: CAD modeling 
 img: assets/img/blog/cad/jet_engine_case.png
-# importance: 5
+importance: 6
 # category: Projects
 giscus_comments: false
 ---

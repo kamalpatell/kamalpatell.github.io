@@ -2,9 +2,9 @@
 layout: page
 title: US Accident Analysis
 project_title: Comprehensive US Accident Analysis in R
-description: Data Analytics in Engineering Systems
+description: Accident Severity Analysis
 img: assets/img/project2/accident.png
-# importance: 1
+importance: 1
 # category: Projects
 giscus_comments: false
 ---
