@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mechanical/Industrial Engineer to Aspiring Data Analyst
+subtitle:
 
 profile:
   align: right
@@ -18,18 +18,18 @@ social: true # includes social icons at the bottom of the page
 
 `Education`
 
-🎓 MS Industrial and Systems Engineering (Major: Systems Analytics) at Rutgers University \
-🎓 Mechanical Engineering from NYU.
+🎓 MS Industrial Engineering (Major: Systems Analytics) - Rutgers University. <br>
+🎓 MS Mechanical Engineering - New York University.
 
 `About me`
 
-🌟 Passionate about design, systems engineering, and analytics with a keen interest in learning new technologies.
-
-⚙ Skilled in mechanical product design using Solidworks, NX Unigraphics and FEA analysis in ANSYS.
-
-🏎️ Mechanical design engineer with the IGVC'18 autonomous vehicle team at NYU.
+🌟 Passionate about design, systems engineering, and apply data-drivern analytics for process improvement.
 
 💻 Data enthusiast, proficient in Python and R programming. I've been on an exciting journey, expanding my skills in SQL for data retrieval and processing. I'm well-versed in using Tableau, Matplotlib, and Seaborn to transform complex datasets into meaningful insights.
+
+⚙  Skilled in product design using Solidworks, NX Unigraphics and FEA analysis in ANSYS.
+
+🏎️ Student Experience at NYU: Mechanical design engineer with the IGVC'18 (International Ground Vehicle Competetion) autonomous vehicle team.
 
 You can check out some of my [projects](/projects/) here and code snippets on my GitHub repository [github repository](/repositories/).
 
