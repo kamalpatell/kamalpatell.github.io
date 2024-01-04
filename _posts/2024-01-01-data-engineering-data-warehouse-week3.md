@@ -60,7 +60,7 @@ In summary, OLAP and OLTP serve different purposes in the data management landsc
 
 ### **Partitioning and Clustering in BigQuery**
 
-Partition is a huge advantage so that Big Query doesn’t need to run over the whole table. For example, when most of the queries are based on date und use it as a filter. You can partition a table based on Integer column, or time-unit column, or ingestion time.
+Partition is a huge advantage so that Big Query doesn’t need to run over the whole table. For example, when most of the queries are based on date and use it as a filter. You can partition a table based on Integer column, or time-unit column, or ingestion time.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">

@@ -2,7 +2,7 @@
 layout: page
 title: US Accident Analysis
 project_title: Comprehensive US Accident Analysis in R
-description: Accident Severity Analysis
+description: Accident Severity Analysis in R
 img: assets/img/project2/accident.png
 importance: 1
 # category: Projects

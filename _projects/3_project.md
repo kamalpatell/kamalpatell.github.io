@@ -55,7 +55,7 @@ $$
 
 ## Code
 
-The python code for the project is on my [Github](https://github.com/kkratos/Network-Controlled-Robotics-ME7974){:target="_blank"}repository.
+The python code for the project is on my [Github](https://github.com/kkratos/Network-Controlled-Robotics-ME7974){:target="_blank"} repository.
 
 ## Result
 

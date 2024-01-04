@@ -16,25 +16,17 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-`Education`
-
-🎓 MS Industrial Engineering (Major: Systems Analytics) - Rutgers University. <br>
-🎓 MS Mechanical Engineering - New York University.
-
 `About me`
 
-🌟 Passionate about design, systems engineering, and apply data-drivern analytics for process improvement.
+Hello and welcome! I'm an industrial/mechanical engineer, interested in applying data-driven solution and analytics to improving systems processes and manufacturing. I have a strong appetite for learning new skills and technology and harness the power of technology to positively impact society. I am continuously improving my skills in AutoCAD, SolidWorks/Creo, Python, Flexsim, and more and currently immersed in learning and building scalable data science models and data engineering. 
 
-💻 Data enthusiast, proficient in Python and R programming. I've been on an exciting journey, expanding my skills in SQL for data retrieval and processing. I'm well-versed in using Tableau, Matplotlib, and Seaborn to transform complex datasets into meaningful insights.
-
-⚙  Skilled in product design using Solidworks, NX Unigraphics and FEA analysis in ANSYS.
-
-🏎️ Student Experience at NYU: Mechanical design engineer with the IGVC'18 (International Ground Vehicle Competetion) autonomous vehicle team.
-
-You can check out some of my [projects](/projects/) here and code snippets on my GitHub repository [github repository](/repositories/).
+About my education, I'm currently an `Industrial and Systems Engineering` graduate at Rutgers University majoring in `system analytics`. Prior to this, I completed my `MS in Mechanical Engineering` from NYU.
 
 `Technical Skills:`
 
-• `Packages:` AutoCAD, SolidWorks (Drawing, GD&T), CATIA V5, Siemens NX, PTC Creo, Minitab, Flexsim, ANSYS, MS Project. \
-• `Development tools:` Python, R, MATLAB, Flask/Django, React/Node, HTML/CSS/JS. \
-• `Data Tools:` Tableau, Spark, Dockers, Scikit-learn, PostgreSQL.
+• `Packages:`Flexsim, Minitab, SolidWorks, CATIA V5, AutoCAD, Siemens NX, PTC Creo, ANSYS, MS Project. \
+• `Languages:`Python, R, MATLAB, C/C++, VBA \
+• `Frameworks`: Scikit, Flask, React, Tableau, MS Office, PyTorch, Plotly \
+• `Platforms:` Dockers, Prefect, Git, PostgreSQL, GCP, Linux
+
+You can check out some of my [projects](/projects/) here and code snippets on my [github repository](/repositories/).
