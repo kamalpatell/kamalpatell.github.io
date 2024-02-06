@@ -1,8 +1,8 @@
 ---
 layout: page
-title: US Accidents
-project_title: Comprehensive US Accident Analysis in R
-description: Accident Severity Analysis in R
+title: US Accidents Analysis
+project_title: Ananlysis of Vehicle Accidents in US
+description: vehicle accidents from 2016-2023
 img: assets/img/project2/accident.png
 importance: 1
 # category: Projects

@@ -1,17 +1,13 @@
 ---
 layout: page
-title: CAD Designs
-project_title: CAD Modeling in PTC/Creo/Solidworks
-description: CAD modeling 
-img: assets/img/blog/cad/jet_engine_case.png
+title: CAD Modeling
+project_title: CAD Modeling in Solidworks/CatiaV5/Inventor
+description: 
+img: assets/img/blog/cad/cover.png
 importance: 6
 # category: Projects
 giscus_comments: false
 ---
-
-### Design Projects
-
-Built CAD models using Solidworks, PTC/Creo and CATIA V5.
 
 ## Jet Engine Assembly (PTC/Creo)
 

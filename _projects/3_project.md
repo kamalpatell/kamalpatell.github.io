@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Swarming of Robotics
-project_title: Network Robotics Control
-description: Simulate the control of 6 wheeled robots in PyBullet physics simulator.
+title: Swarm Robotics
+project_title: Network Control Robots
+description: simulate the control of 6 wheeled robots in PyBullet physics simulator.
 img: assets/img/project4/swarm.png
 importance: 5
 # category: Projects

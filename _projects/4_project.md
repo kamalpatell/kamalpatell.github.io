@@ -2,7 +2,7 @@
 layout: page
 title: Home Credit Default Risk
 project_title: Home Credit Default Risk
-description: Kaggle Competetion by Home Credit Group. 
+description: kaggle competetion by home credit group. 
 img: assets/img/homecredit.png
 importance: 2
 # category: Projects

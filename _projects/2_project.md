@@ -2,7 +2,7 @@
 layout: page
 title: Building Power Consumption
 project_title: Building Energy Analysis
-description: Visualization and analysis of simulated building energy data
+description: visualization and analysis of simulated building energy data
 img: assets/img/project3/E1.png
 importance: 3
 # category: Projects
