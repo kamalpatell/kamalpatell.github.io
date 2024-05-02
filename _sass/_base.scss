@@ -1058,3 +1058,18 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+/*----- Project -----*/
+.project {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.project-content {
+  flex: 1 1 auto;
+}
