@@ -179,7 +179,8 @@ horizontal: false
             fault tree and event tree analysis, to identify potential
             failure modes and their probabilities, highlighting risks of component
             failure due to overheating. Performance risk assessment use cyclic life
-            testing data to assess battery longevity and failure rates.key finding include the risk value of top event is only 8.19%. Reliability modeling using Weibull distribution and uncertainty analysis estimates mean time to failure (MTTF) of 13,080 hrs.
+            testing data to assess battery longevity and failure rates.key finding include the risk value of top event is only 8.19%. 
+            Reliability modeling using Weibull distribution and uncertainty analysis estimates mean time to failure (MTTF) of 13,080 hrs.
             <br>
             <br>
             <b>

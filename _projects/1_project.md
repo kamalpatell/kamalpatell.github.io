@@ -1,7 +1,7 @@
 ---
 layout: page
 title: US Accidents Analysis
-project_title: Ananlysis of Vehicle Accidents in US
+project_title: US Vehicle Accidents Analysis in R
 description: vehicle accidents from 2016-2023
 img: assets/img/project2/accident.png
 importance: 1
