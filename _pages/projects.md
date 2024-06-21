@@ -16,11 +16,39 @@ horizontal: false
     <h2>
       Data Mining and Analytics
     </h2>
-    <div class="projects-container">
+    <div class="projects-container"> 
       <div class="project">
         <div class="project-image">
           <a href="" style="height: 12em;">
-            <img width="320" height="200" src="../assets/img/projects/dataanalysis.png"
+            <img width="320" height="200" src="../assets/img/projects/airplane.jpeg"
+            alt="Project Image" />
+          </a>
+        </div>
+        <div class="project-content">
+          <a href="https://docs.google.com/presentation/d/1zNCyu7yM1hGsVfAu0PtWSrSqo8q09ZvbnaHwQeRdvXc/edit#slide=id.p"
+          class="research-proj-title" target="_blank">
+            Predictive Maintenance of Aircraft Engine
+          </a>
+          <p>
+            Predictive Maintenance techniques are employed to assess the condition of equipment, enabling proactive maintenance or failure prevention before issues occur. This approach is highly beneficial as it significantly reduces equipment downtime costs. To solve regression task of predicting the remaining useful life (RUL) of a machine, I built a LSTM model using keras library. [In Progress]
+            <br>
+            <br>
+            <b>
+              December 2023
+            </b>
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://github.com/kkratos/Predictive-Maintenance-of-Aircraft-Engine">
+              Code
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="projects-container"> 
+      <div class="project">
+        <div class="project-image">
+          <a href="" style="height: 12em;">
+            <img width="320" height="200" src="../assets/img/projects/loan.jpg"
             alt="Project Image" />
           </a>
         </div>
@@ -97,12 +125,12 @@ horizontal: false
       <div class="project">
         <div class="project-image">
           <a href="" style="height: 12em;">
-            <img width="320" height="200" src="../assets/img/projects/building.png"
+            <img width="320" height="200" src="../assets/img/projects/electricity.png"
             alt="Project Image" />
           </a>
         </div>
         <div class="project-content">
-          <a href="https://github.com/kkratos/machine-learning/tree/main/Building%20Energy%20Analysis"
+          <a href="https://github.com/kkratos/Building-Energy-Analysis"
           class="research-proj-title" target="_blank">
             Building Energy Analysis
           </a>
@@ -156,6 +184,7 @@ horizontal: false
         </div>
       </div>
     </div>
+
   </section>
   <!-- Risk Analysis -->
   <section id="projects" class="portfolio-item">

@@ -2,9 +2,9 @@ github_users:
   - kkratos
 
 github_repos:
+  - kkratos/data-science-portfolio
+  - kkratos/US-Vehicle-Accidents-Pattern-Analysis
+  - kkratos/Loan-Default-Risk-Prediction
+  - kkratos/Predictive-Maintenance-of-Aircraft-Engine
+  - kkratos/Predict-Student-Performance
   - kkratos/machine-learning
-  - kkratos/540-Data-Analytics-in-R
-  - kkratos/ME-GY-7973-Optimal-Control
-  - kkratos/Ecommerce-Store
-  - kkratos/ME-GY-7973-Optimal-Control
-  - kkratos/de-zoomcamp-2023
