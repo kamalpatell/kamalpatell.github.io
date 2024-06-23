@@ -44,7 +44,6 @@ A Data Lake stores a huge amount of data and are normally used for stream proces
 
 ETL is usually a Data Warehouse solution, used mainly for small amount of data as a schema-on-write approach. On the other hand, ELT is a Data Lake solution, employed for large amounts of data as a schema-on-read approach.
 
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/blog/data/datalake2.png" class="img-fluid rounded z-depth-1" %}
@@ -55,6 +54,7 @@ ETL is usually a Data Warehouse solution, used mainly for small amount of data a
 </div>
 
 ### **Introduction to data warehouse**
+
 A data warehouse is a central repository of information that can be analyzed to make more informed decisions. Reports, dashboards, and analytics tools are indispensable for business users seeking to derive insights from their data, oversee business performance, and facilitate decision-making. The foundation of these tools lies in data warehouses, which store data efficiently to reduce input and output (I/O) operations, ensuring swift delivery of query results to a multitude of users simultaneously.
 
 Popular data warehouse solution available are:
@@ -87,24 +87,13 @@ Several tools available for workflow orchestration in data engineering are:
 
 4. `Luigi`: An open-source Python module for building complex pipelines and workflows.
 
-#### Workflow Process
-
-
 ### **Introduction to Prefect concepts**
 
 Prefect is an modern management systems for data-intensive workflows. It's the simplest way to transform any Python function into a unit of work that can be observed and orchestrated.
 
-The core concepts is Prefect include:
-
-Flow:
-
-Tasks:
- 
-Blocks:
-
 ### Loading data into Postgres using Prefect
 
-**Step 1**
+**`Step 1`**
 
 Create conda environment to install relevant libraries without affecting base environment.
 
@@ -112,7 +101,7 @@ Run `conda create -n zoom python-3.9` where zoom is the environment name, you ca
 
 Then activate the environment by running `conda activate `
 
-**Step 2**
+**`Step 2`**
 
 Create requirements.txt file which contains all the relevant libraries which we will be using for this lesson.
 
@@ -130,9 +119,9 @@ sqlalchemy==1.4.46
 
 Run `pip install -r requirement.txt` which will load all the libraries in the zoom environment.
 
-**Step 3**
+**`Step 3`**
 
-Now, lets transform the ingest_data.py file from week 1 into flows and tasks. we can use this concept of task and flow to break the ingest_data python script into multiple tasks and flows which would help us visualize our whole workflow better. 
+Now, lets transform the ingest_data.py file from week 1 into flows and tasks. we can use this concept of task and flow to break the ingest_data python script into multiple tasks and flows which would help us visualize our whole workflow better.
 
 1. Load the necessary libraries:
 
@@ -146,6 +135,7 @@ from prefect import flow, task
 from prefect.tasks import task_input_hash
 from datetime import timedelta
 ```
+
 2. Create an extract function which will help extract data from the given url:
 
 ```python
@@ -164,9 +154,10 @@ def extract_data(csv_url):
 
     df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
     df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
-    
-    return df 
+
+    return df
 ```
+
 3. Create a transform function to transform the data:
 
 ```python
@@ -175,14 +166,15 @@ def transform_data(df):
     print(f"pre: missing passenger count: {df['passenger_count'].isin([0]).sum()}")
     df = df[df['passenger_count'] != 0]
     print(f"post: missing passenger count: {df['passenger_count'].isin([0]).sum()}")
-    
-    return df 
+
+    return df
 ```
+
 4. Next we create load function(ingest_data) to load the data:
 
 Here we use a concepts of block to store configuration and provide an interface of interacting with external systems.
 
-In our ingest_data.py, instead of hard coding all the input credentials(url, user, passwords) as shown in below commented code  we can create a block which can store the credentials and can be called directly.
+In our ingest_data.py, instead of hard coding all the input credentials(url, user, passwords) as shown in below commented code we can create a block which can store the credentials and can be called directly.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -211,7 +203,7 @@ def ingest_data(table_name, df):
 
         # postgres_url = f'postgresql://{user}:{password}@{host}:{port}/{db}'
         # engine = create_engine(postgres_url)
-    
+
         # df.head(n=0).to_sql(name=table_name, con=engine if_exists='replace')
         # df.to_sql(name=table_name, con=engine, if_exists='append')
 ```
@@ -227,7 +219,7 @@ def main(table_name:str):
     # port = "5432"
     # db = "ny_taxi"
     csv_url = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
-    
+
     log_subflow(table_name)
     raw_data = extract_data(csv_url)
     data = transform_data(raw_data)
@@ -237,7 +229,7 @@ if __name__ == '__main__':
     main("yellow_taxi_trips")
 ```
 
-**Step 4**
+**`Step 4`**
 
 Save this file as `ingest_data_flow.py` and run the file through GitBash by using the command `python ingest_data_flow.py`
 
@@ -245,14 +237,14 @@ This should successfully load the data into postgres. But since we have only giv
 
 ### ETL to GCP
 
-**Step 1**: Register the block with command
+**`Step 1`**: Register the block with command
 
-```shell 
+```shell
 prefect block register -m prefect_gcp
 
 ```
 
-**Step 2** : Create a google cloud storage bucket block connector
+**`Step 2`** : Create a google cloud storage bucket block connector
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -260,7 +252,7 @@ prefect block register -m prefect_gcp
     </div>
 </div>
 
-**Step 3**: Add GCS credential
+**`Step 3`**: Add GCS credential
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -268,7 +260,7 @@ prefect block register -m prefect_gcp
     </div>
 </div>
 
-**Step 4** : ETL from gcs to bq
+**`Step 4`** : ETL from gcs to bq
 
 To write to gsc
 
@@ -279,7 +271,7 @@ def write_gcs(path:Path) -> None:
 
     gcp_storage_block = GcsBucket.load("zoom-gcs")
     gcp_storage_block.upload_from_path(from_path = f"{path}", to_path=path)
-    return 
+    return
 ```
 
 To load data to gcs we follow the same step as from loading to postgres and adjusted our code when necessary.
@@ -296,7 +288,7 @@ from prefect_gcp.cloud_storage import GcsBucket
 @task(retries=3)
 def fetch(dataset_url:str) -> pd.DataFrame:
     """Read taxi data from web into pandas DataFrame"""
-    
+
     df = pd.read_csv(dataset_url)
     return df
 
@@ -325,7 +317,7 @@ def write_gcs(path:Path) -> None:
 
     gcp_storage_block = GcsBucket.load("zoom-gcs")
     gcp_storage_block.upload_from_path(from_path = f"{path}", to_path=path)
-    return 
+    return
 
 @flow()
 def etl_web_to_gcs() -> None:
@@ -347,7 +339,8 @@ if __name__ == '__main__':
 ```
 
 ### Prefect Deployment
- Prefect is a workflow management system designed to help data engineers and data scientists automate, schedule, and monitor data workflows. Deploying a Prefect workflow involves setting it up to run in a production environment, allowing it to be executed on a schedule or triggered by external events.
+
+Prefect is a workflow management system designed to help data engineers and data scientists automate, schedule, and monitor data workflows. Deploying a Prefect workflow involves setting it up to run in a production environment, allowing it to be executed on a schedule or triggered by external events.
 
 #### Using Prefect CLI
 
@@ -356,6 +349,7 @@ There are two methods to deploy the flow: CLI or python file.
 ```shell
 prefect deployment build ./parameterized_flow.py:etl_parent_flow -n "Parameterized ETL"
 ```
+
 - Command: `prefect deployment build`: This Prefect CLI command is used to prepare the settings for a deployment. The build command likely indicates that it's configuring and setting up the deployment environment.
 
 - ./parameterized_flow.py:etl_parent_flow: This part of the command specifies the location of the Prefect flow script file and the name of the entrypoint flow function. In this case, the script is parameterized_flow.py, and the entrypoint flow function is etl_parent_flow. The format is file_path:entrypoint_function.
@@ -518,4 +512,3 @@ python docker_deploy.py
 5. Run the docker flow we created from CLI by running the command `prefect deployment run etl-parent-flow/docker-flow`
 
 This should complete the workflow process load the data into GCS.
-

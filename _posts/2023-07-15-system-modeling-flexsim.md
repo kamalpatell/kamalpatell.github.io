@@ -90,7 +90,6 @@ In FlexSim, "State" represents the current condition of an entity, while "Stayti
     Staytime
 </div>
 
-
 Overall, a comprehensive analysis of the simulation model's performance and behavior using bar charts, line charts box plot, Gantt Chart etc. By combining quantitative data with visual representations, we can effectively communicate the insights gained from the simulation runs. These results serve as a valuable resource for further analysis, decision-making, and potential optimization efforts in real-world scenarios.
 
 Despite the model's simplicity, it provides a valuable learning opportunity by incorporating various distribution types, triggers, labels, and dynamic attributes. Through this model, I gained practical experience in utilizing statistical distributions, global tables, and object properties to simulate real-world scenarios. This foundation will prove beneficial as I progress to more complex simulation projects in the future.
