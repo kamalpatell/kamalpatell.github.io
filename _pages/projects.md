@@ -176,7 +176,7 @@ horizontal: false
               December 2022
             </b>
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href="https://github.com/kkratos/machine-learning/tree/main/Building%20Energy%20Analysis"
+            <a href="https://github.com/kkratos/Building-Energy-Analysis"
             target="_blank">
               Code
             </a>
