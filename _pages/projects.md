@@ -12,6 +12,40 @@ horizontal: false
 <!-- projects -->
 
 <div class="projects">
+ <section id="projects" class="portfolio-item">
+    <h2>
+      AI in Decision Making and Control
+    </h2>
+    <div class="projects-container">
+      <div class="project">
+        <div class="project-image">
+          <a href="" style="height: 12em;">
+            <img width="320" height="200" src="../assets/img/projects/trajectory.gif" alt="Project Image"
+            />
+          </a>
+        </div>
+        <div class="project-content">
+          <a href="#" class="research-proj-title">
+            Vehicle Trajectory Forecasting Using LSTM Networks
+          </a>
+          <p>
+            The model sequentially processes 62 timesteps of features, including position, velocity, and acceleration, to predict future coordinates. An LSTM layer with 50 units is followed by two dense layers with 30 and 10 units, all employing ReLU activation, culminating in an output layer that forecasts the vehicle's position for the next 5 timesteps. Trained on a dataset of 18,457 files over 60 epochs with a batch size of 32, the model was optimized using the Adam optimizer and Mean Squared Error (MSE) as the loss function.
+            <br>
+            <br>
+            <b>
+              December 2022
+            </b>
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://drive.google.com/file/d/171DwMsI1L774TiRNUt-bis0X0G4FjnyI/view?usp=drive_link"
+            target="_blank">
+              Report
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section id="projects" class="portfolio-item">
     <h2>
       Data Mining and Analytics
