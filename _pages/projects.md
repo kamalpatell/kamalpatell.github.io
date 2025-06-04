@@ -12,7 +12,42 @@ horizontal: false
 <!-- projects -->
 
 <div class="projects">
- <section id="projects" class="portfolio-item">
+  <section id="projects" class="portfolio-item">
+  <h2>
+    Electricity Price Forecasting: Autoregressive and LSTM Model
+  </h2>
+
+   <div class="projects-container">
+      <div class="project">
+        <div class="project-image">
+          <a href="" style="height: 12em;">
+            <img width="320" height="200" src="../assets/img/projects/forecasting.png" alt="Project Image"
+            />
+          </a>
+        </div>
+        <div class="project-content">
+          <!-- <a href="#" class="research-proj-title">
+          TODO 
+          </a> -->
+          <p>
+            Developed a electricity price forecasting model to predict day-ahead Locational Marginal Prices (LMP) using time-series analysis and machine learning. After extensive data exploration, which revealed strong daily and weekly seasonality, implemented and compared multiple models, including Seasonal ARIMAX and LSTM neural networks. The optimized LSTM model, enhanced with lagged features, seasonal differencing, and time-based variables, outperformed traditional statistical methods, achieving a MAE of 3.92 and RMSE of 9.21—outperforming the benchmark SARIMAX model (MAE: 4.05, RMSE: 9.87).
+            <br>
+            <br>
+            <!-- <b>
+              May 2024
+            </b> -->
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href=""
+            target="_blank">
+              Code and Report
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="projects" class="portfolio-item">
     <h2>
       AI in Decision Making and Control
     </h2>
@@ -29,12 +64,12 @@ horizontal: false
             Vehicle Trajectory Forecasting Using LSTM Networks
           </a>
           <p>
-            The model sequentially processes 62 timesteps of features, including position, velocity, and acceleration, to predict future coordinates. An LSTM layer with 50 units is followed by two dense layers with 30 and 10 units, all employing ReLU activation, culminating in an output layer that forecasts the vehicle's position for the next 5 timesteps. Trained on a dataset of 18,457 files over 60 epochs with a batch size of 32, the model was optimized using the Adam optimizer and Mean Squared Error (MSE) as the loss function.
+            This project develops an LSTM-based deep learning model to predict a vehicle's future trajectory by analyzing its past movement patterns. The model takes 62 timesteps of sequential motion data (including position, velocity, and acceleration) as input and forecasts the vehicle's coordinates (Local_X, Local_Y) for the next 5 timesteps. The architecture consists of a 50-unit LSTM layer followed by two dense layers (30 and 10 units, ReLU activation), trained on 9,400 time-series files over 60 epochs using the Adam optimizer and MSE loss. Designed for applications in autonomous driving and traffic analysis, this model effectively captures temporal dependencies to enable accurate short-term trajectory predictions.
             <br>
             <br>
-            <b>
+            <!-- <b>
               December 2022
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://colab.research.google.com/drive/1zJoJocMoiQLUucM5MieFuhHz8zWrZ18Z?authuser=3"
             target="_blank">
@@ -67,9 +102,9 @@ horizontal: false
             Predictive Maintenance techniques are employed to assess the condition of equipment, enabling proactive maintenance or failure prevention before issues occur. This approach is highly beneficial as it significantly reduces equipment downtime costs. To solve regression task of predicting the remaining useful life (RUL) of a machine, I built a LSTM model using keras library. [In Progress]
             <br>
             <br>
-            <b>
+            <!-- <b>
               December 2023
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Predictive-Maintenance-of-Aircraft-Engine">
               Code
@@ -99,9 +134,9 @@ horizontal: false
             strategies to reduce the number of accidents and improve road safety.
             <br>
             <br>
-            <b>
+            <!-- <b>
               December 2023
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Home-Credit-Default-Risk">
               Code
@@ -138,9 +173,9 @@ horizontal: false
             road safety.
             <br>
             <br>
-            <b>
+            <!-- <b>
               Nov 2023
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Data-Analytics-in-R/blob/main/Project/Final.R"
             target="_blank">
@@ -172,9 +207,9 @@ horizontal: false
             Performed time series analysis on 500+ time-series meter data from buildings data genome project. Utilized K-means Clustering on electrical meter data to identify daily load profiles and implemented a k-nearest neighbor regression model to accurately predict energy consumption with a MAPE of 6.59%.
             <br>
             <br>
-            <b>
+            <!-- <b>
               December 2022
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Building-Energy-Analysis"
             target="_blank">
@@ -201,9 +236,9 @@ horizontal: false
             I developed two interactive Tableau dashboards as part of my projects. One dashboard focused on Netflix movie analytics, offering insights into viewership trends, ratings, and popular genres. The other dashboard tracked retail sales data for a bicycle company operating in Australia, providing detailed analysis of sales performance, geographical distribution, and product trends.
             <br>
             <br>
-            <b>
+            <!-- <b>
               Nov 2023
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://public.tableau.com/app/profile/kamalpatel/viz/Netflix_16999804373180/ProfilesofMoviesAdded2010-2019"
             target="_blank">
@@ -246,9 +281,9 @@ horizontal: false
             Reliability modeling using Weibull distribution and uncertainty analysis estimates mean time to failure (MTTF) of 13,080 hrs.
             <br>
             <br>
-            <b>
+            <!-- <b>
               December 2022
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://drive.google.com/file/d/171DwMsI1L774TiRNUt-bis0X0G4FjnyI/view?usp=drive_link"
             target="_blank">
@@ -287,9 +322,9 @@ horizontal: false
             by $700K, and incorporate digital advancements at a $150K cost.
             <br>
             <br>
-            <b>
+            <!-- <b>
               December 2022
-            </b>
+            </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <!-- <a href="https://drive.google.com/drive/folders/1qlgQ9tQ9yDmx3vQ_kYfpukQJ9BHeg7eI?usp=sharing">FlexSim</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
             <a href="https://docs.google.com/presentation/d/1BZzvgnlkeKS1BIuX9DnHdslQ32W94SJWLdo1aZteWb8/edit#slide=id.g1f87997393_0_782"
