@@ -37,7 +37,7 @@ horizontal: false
               May 2024
             </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href=""
+            <a href="https://github.com/kkratos/Electricity-Price-Forecasting-Project"
             target="_blank">
               Code and Report
             </a>
