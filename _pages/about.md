@@ -22,7 +22,13 @@ Hello and welcome! I'm an industrial/mechanical engineer, interested in applying
 
 `Education`
 
-I'm currently an `Industrial and Systems Engineering` graduate at Rutgers University majoring in `system analytics`. Prior, I completed my `MS in Mechanical Engineering` from NYU.
+I'm currently a PhD `Industrial and Systems Engineering` student at Rutgers University majoring in `system analytics`. Prior, I completed `MS` from same department.
+
+`Teaching Assistant`
+
+• ISE 540:492 - I was a Teaching Assistant for Undergraduate course on Reliability Engineering(Instructor: Prof. Elsayed). I supported undergraduate students in understanding core concepts in reliabiliy such as failure analysis, system reliability and probability models, assisted with assignments, and graded coursework.
+
+• ISE 540:501 Teaching Assistant - Also served as as teaching assistant for graduate course on Applied Optimization course (Instructor: Prof. David Coit). I helped students with linear programming and optimization concepts, evaluated course assignments and projects.
 
 `Technical Skills:`
 

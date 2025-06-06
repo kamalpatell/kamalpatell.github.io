@@ -127,11 +127,7 @@ horizontal: false
             Home Credit Default Risk
           </a>
           <p>
-            The objective of this project was to analyze and gain insights from the
-            US road accident from 2016 to 2022 data to better understand the contributing
-            factors, patterns, and trends associated with accidents. By examining the
-            dataset, we aim to uncover valuable information that can help in developing
-            strategies to reduce the number of accidents and improve road safety.
+            Developed a machine learning model for kaggle competition as part of course project to predict the likelihood of loan default for Home Credit Group, a financial institution serving underbanked populations. Performed extensive exploratory data analysis on a dataset of 300,000+ loan applications with 122 features. Preprocessed data by handling missing values, encoding features, and normalization. Compared Logistic Regression, Random Forest, and boosting methods, optimizing performance with AutoML (PyCaret/H2O.ai) for hyperparameter tuning. XGBoost achieved the best performance with an ROC-AUC score of 0.74.
             <br>
             <br>
             <!-- <b>
@@ -140,11 +136,6 @@ horizontal: false
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Home-Credit-Default-Risk">
               Code
-            </a>
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href="https://docs.google.com/presentation/d/1zNCyu7yM1hGsVfAu0PtWSrSqo8q09ZvbnaHwQeRdvXc/edit#slide=id.p"
-            target="_blank">
-              report
             </a>
           </p>
         </div>
@@ -180,11 +171,6 @@ horizontal: false
             <a href="https://github.com/kkratos/Data-Analytics-in-R/blob/main/Project/Final.R"
             target="_blank">
               Code
-            </a>
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href="https://docs.google.com/presentation/d/1lTvI8ufdjC_ie17wo_yj4vBeuOUMRvxJmAsXBbnD3-o/edit#slide=id.p"
-            target="_blank">
-              report
             </a>
           </p>
         </div>
@@ -277,15 +263,14 @@ horizontal: false
             fault tree and event tree analysis, to identify potential
             failure modes and their probabilities, highlighting risks of component
             failure due to overheating. Performance risk assessment use cyclic life
-            testing data to assess battery longevity and failure rates.key finding include the risk value of top event is only 8.19%. 
-            Reliability modeling using Weibull distribution and uncertainty analysis estimates mean time to failure (MTTF) of 13,080 hrs.
+            testing data to assess battery longevity and failure rates.key finding include the risk value of top event is only 8.19%.Reliability modeling using Weibull distribution and uncertainty analysis estimates mean time to failure (MTTF) of 13,080 hrs.
             <br>
             <br>
             <!-- <b>
               December 2022
             </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href="https://drive.google.com/file/d/171DwMsI1L774TiRNUt-bis0X0G4FjnyI/view?usp=drive_link"
+            <a href="https://drive.google.com/file/d/171DwMsI1L774TiRNUt-bis0X0G4FjnyI/view?usp=sharing"
             target="_blank">
               Report
             </a>

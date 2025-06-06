@@ -2,9 +2,9 @@ github_users:
   - kkratos
 
 github_repos:
+  - kkratos/Electricity-Price-Forecasting-Project
   - kkratos/data-science-portfolio
+  - kkratos/machine-learning
   - kkratos/US-Vehicle-Accidents-Pattern-Analysis
   - kkratos/Loan-Default-Risk-Prediction
   - kkratos/Predictive-Maintenance-of-Aircraft-Engine
-  - kkratos/Predict-Student-Performance
-  - kkratos/machine-learning
