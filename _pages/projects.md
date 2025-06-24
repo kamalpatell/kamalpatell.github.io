@@ -14,6 +14,42 @@ horizontal: false
 <div class="projects">
   <section id="projects" class="portfolio-item">
   <h2>
+    Barzilai-Bowerin Step Size for Stochastic Gradient Descent Paper Implementation
+  </h2>
+
+   <div class="projects-container">
+      <div class="project">
+        <div class="project-image">
+          <a href="" style="height: 12em;">
+            <img width="320" height="200" src="../assets/img/projects/BB.png" alt="Project Image"
+            />
+          </a>
+        </div>
+        <div class="project-content">
+          <!-- <a href="#" class="research-proj-title">
+          TODO 
+          </a> -->
+          <p>
+            Implemented the Barzilai-Borwein adaptive step size method for Stochastic Variance Reduced Gradient(SVRG) in Python.  Compared all three algorithms-SGD vs Stochastic Variance Reduced Gradient and SVGR using the Barzilai-Borwein method. Achieved 15% faster convergence on MNIST dataset using the proposed method.
+            <br>
+            <br>
+            <!-- <b>
+              May 2024
+            </b> -->
+            &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://github.com/kkratos/Paper-Implementation-Barzilai-Borwein-Step-Size-for-Stochastic-Gradient-Descent"
+            target="_blank">
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projects" class="portfolio-item">
+  <h2>
     Electricity Price Forecasting: Autoregressive and LSTM Model
   </h2>
 
@@ -39,7 +75,7 @@ horizontal: false
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Electricity-Price-Forecasting-Project"
             target="_blank">
-              Code and Report
+              GitHub
             </a>
           </p>
         </div>
@@ -71,9 +107,9 @@ horizontal: false
               December 2022
             </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href="https://colab.research.google.com/drive/1zJoJocMoiQLUucM5MieFuhHz8zWrZ18Z?authuser=3"
+            <a href="https://github.com/kkratos/AI-Decision-Making-and-Control-Course-Projects"
             target="_blank">
-              Code
+              GitHub
             </a>
           </p>
         </div>
@@ -107,7 +143,7 @@ horizontal: false
             </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Predictive-Maintenance-of-Aircraft-Engine">
-              Code
+              GitHub
             </a>
           </p>
         </div>
@@ -135,7 +171,7 @@ horizontal: false
             </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Home-Credit-Default-Risk">
-              Code
+              GitHub
             </a>
           </p>
         </div>
@@ -168,9 +204,9 @@ horizontal: false
               Nov 2023
             </b> -->
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            <a href="https://github.com/kkratos/Data-Analytics-in-R/blob/main/Project/Final.R"
+            <a href="https://github.com/kkratos/US-Vehicle-Accidents-Pattern-Analysis/tree/main/Project"
             target="_blank">
-              Code
+              GitHub
             </a>
           </p>
         </div>
@@ -199,7 +235,7 @@ horizontal: false
             &nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/kkratos/Building-Energy-Analysis"
             target="_blank">
-              Code
+              GitHub
             </a>
           </p>
         </div>
