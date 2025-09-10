@@ -18,23 +18,24 @@ social: true # includes social icons at the bottom of the page
 
 `About me`
 
-Hello and welcome! I'm an industrial/mechanical engineer, interested in applying data-driven solution and analytics to improve system processes. I have a strong appetite for learning new skills and harness the power of technology to positively impact society. I'm currently immersed in learning to build AI models and data engineering.
+Hello and welcome! I'm an industrial/mechanical engineer, interested in applying data-driven solution and analytics to improve system processes. I have a strong appetite for learning new skills and harness the power of technology to positively impact society. I'm currently immersed in learning to build AI models.
 
 `Education`
 
-I'm currently a PhD `Industrial and Systems Engineering` student at Rutgers University majoring in `system analytics`. Prior, I completed `MS` from same department.
+I'm currently a PhD student in `Industrial and Systems Engineering` department at Rutgers University.
 
 `Teaching Assistant`
 
-• ISE 540:492 - I was a Teaching Assistant for Undergraduate course on Reliability Engineering(Instructor: Prof. Elsayed). I supported undergraduate students in understanding core concepts in reliabiliy such as failure analysis, system reliability and probability models, assisted with assignments, and graded coursework.
+• `ID3EA I 14:440:101`: Fall 2025 TA for undergraduate Introduction to Data-Driven Design Engineering course. Teach students the fundamental of CAD modeling using OnShape, help with projects and grading.  
 
-• ISE 540:501 Teaching Assistant - Also served as as teaching assistant for graduate course on Applied Optimization course (Instructor: Prof. David Coit). I helped students with linear programming and optimization concepts, evaluated course assignments and projects.
+• `ISE 540:492` - Spring 2025 TA for Undergraduate course on Reliability Engineering(Instructor: Prof. Elsayed). Assisted undergraduate students in understanding core concepts such reliabiliy, failure analysis and probability models. Helped with assignments and graded coursework.
+
+• `ISE 540:501` - Spring 2025 TA for graduate course on Applied Optimization course (Instructor: Prof. David Coit). Helped students with linear programming and optimization concepts, evaluated course assignments and projects.
 
 `Technical Skills:`
 
-• `Packages:` SolidWorks, CATIA V5, AutoCAD, Siemens NX, PTC Creo, Flexsim, Minitab, ANSYS, MS Project, Viso. \
-• `Languages:` Python (NumPy, Pandas, Scikit-learn), R, MATLAB, C/C++, Javascript \
-• `Data Analysis / ML Tools:` Tableau, PowerBI, PyTorch, Tensorflow, Scikit, Git \
-• `Technologies:` Dockers, PostgreSQL, GCP, Linux, VS Code
+• `Programming Languages:` Python(NumPy, Pandas, Scikit-learn), R, MATLAB, C/C++, Javascript \
+• `Software Packages:` ANSYS, SolidWorks, CATIA V5, AutoCAD, Siemens NX, PTC Creo, Flexsim, Minitab, MS Project, Viso. \
+• `ML Packages/Tools:` PyTorch, Tensorflow, Scikit, Dockers, PostgreSQL, Linux, VS Code, Git. \
 
-You can check out some of my [projects](/projects/) here and code snippets on my [github repository](/repositories/).
+<!-- You can check out some of my [projects](/projects/) here and code snippets on my [github repository](/repositories/). -->
